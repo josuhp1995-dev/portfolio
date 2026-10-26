@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Josué Heredia Palacios | Portfolio DAW</title>
+  
+  <!-- Tipografía Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Estilos Externos -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVEGACIÓN -->
+  <header>
+    <div class="container">
+      <nav>
+        <a href="#" class="logo">&lt;JosuéHP /&gt;</a>
+        <ul class="nav-links">
+          <li><a href="#about">Sobre mí</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#education">Formación</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO / INICIO -->
+    <section class="hero container">
+      <div class="hero-content">
+        <p class="hero-subtitle">Estudiante de 2º de DAW</p>
+        <h1 class="hero-title">Josué Heredia Palacios</h1>
+        <p class="hero-tagline">
+          Desarrollador Web con formación Fullstack y aspiración profesional orientada a la <strong>Ingeniería de Datos</strong>.
+        </p>
+        <div class="hero-actions">
+          <a href="CV_Josue_Heredia.pdf" download="CV_Josue_Heredia.pdf" class="btn btn-primary">📄 Descargar CV</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline">LinkedIn</a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub</a>
+        </div>
+      </div>
+      
+      <div class="hero-image-container">
+        <img 
+          src="https://media.licdn.com/dms/image/v2/D4D03AQH4SkczmFw_rA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1707464779905?e=1794441600&v=beta&t=Om1KUVoFyUpDrRg0CexF6W9gZJZJUQa7KIqat39_sd4" 
+          alt="Fotografía de Josué Heredia Palacios" 
+          class="profile-img"
+        />
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="about" class="container">
+      <h2 class="section-title">Sobre mí</h2>
+      <div class="about-card">
+        <p>
+          Soy Josué Heredia Palacios, estudiante de Desarrollo de Aplicaciones Web (DAW).
+          A lo largo de mi formación he adquirido conocimientos tanto en desarrollo Frontend como Backend, manejando tecnologías clave como HTML, CSS, JavaScript, PHP, Java, Git y GitHub además de la gestión de bases de datos con SQL.
+        </p>
+        <p>
+          Aunque mi perfil formativo está centrado en el desarrollo web, mi verdadera pasión y objetivo profesional es orientarme hacia la <strong>Ingeniería de Datos</strong>. Busco integrarme en un equipo donde pueda aportar mi energía y seguir desarrollando mis habilidades.
+        </p>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="skills" class="container">
+      <h2 class="section-title">Habilidades Técnicas</h2>
+      <div class="skills-grid">
+        
+        <div class="skill-card">
+          <h3>💻 Frontend & Maquetación</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript (ES6+)</span>
+            <span class="skill-tag">Responsive Design</span>
+          </div>
+          <p class="skill-desc">Creación de interfaces limpias, adaptables a móviles y comunicación dinámica con cliente.</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>⚙️ Backend & Bases de Datos</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">Bases de Datos</span>
+          </div>
+          <p class="skill-desc">Modelado de bases de datos relacionales, lógica de servidor y estructuración de datos.</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>🛠️ Herramientas & Flujo</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">VS Code</span>
+          </div>
+          <p class="skill-desc">Control de versiones, gestión de repositorios y entorno de trabajo organizado.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="projects" class="container">
+      <h2 class="section-title">Proyectos</h2>
+      <div class="projects-grid">
+        
+        <!-- PROYECTO 1 -->
+        <article class="project-card">
+          <div class="project-header">
+            <h3>API del Tiempo</h3>
+            <span class="badge">Terminado</span>
+          </div>
+          <p class="project-desc">
+            Aplicación web interactiva que consume una API meteorológica en tiempo real. Permite buscar ciudades y obtener datos sobre el clima.
+          </p>
+
+          <!-- Widget Interactivo -->
+          <div class="weather-widget">
+            <input type="text" id="cityInput" placeholder="Ej: Málaga, Madrid..." value="Málaga">
+            <button id="searchBtn">Consultar Tiempo</button>
+            <div id="weatherResult" class="weather-result">
+              <span class="weather-temp">22°C</span>
+              <span class="weather-city">Málaga, ES - Soleado</span>
+            </div>
+          </div>
+
+          <div class="project-tags">
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">API REST</span>
+            <span class="skill-tag">HTML5/CSS3</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com" target="_blank" rel="noopener">Código en GitHub →</a>
+          </div>
+        </article>
+
+        <!-- PROYECTO 2 -->
+        <article class="project-card project-card--in-progress">
+          <div class="project-header">
+            <h3>Proyecto Orientado a Datos / Backend</h3>
+            <span class="badge badge--yellow">En Desarrollo</span>
+          </div>
+          <p class="project-desc">
+            Proyecto enfocado en la integración y procesado de datos utilizando Java y bases de datos SQL para la gestión analítica.
+          </p>
+          <div class="project-tags">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">Ingeniería de Datos</span>
+          </div>
+          <div class="project-links">
+            <span class="link-disabled">Próximamente disponible</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- FORMACIÓN -->
+    <section id="education" class="container">
+      <h2 class="section-title">Formación Académica</h2>
+      <div class="timeline">
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <h3 class="timeline-title">Formación Profesional Superior DAW</h3>
+          <div class="timeline-institution">Digitech, Málaga</div>
+          <div class="timeline-date">En curso (2º año)</div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <h3 class="timeline-title">Certificado Profesional Nivel 3: ADGG0308 “Asistencia Documental y de Gestión en Despachos y Oficinas”</h3>
+          <div class="timeline-institution">Ayuntamiento de Fuengirola</div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <h3 class="timeline-title">Bachillerato</h3>
+          <div class="timeline-institution">I.E.S. Luis Bueno Crespo</div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-socials">
+        <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Josué Heredia Palacios. Desarrollado con HTML5, CSS3 y JS.</p>
+    </div>
+  </footer>
+
+  <!-- Código JavaScript Externo -->
+  <script src="script.js"></script>
+</body>
+</html>
